@@ -15,7 +15,7 @@ if (!class_exists('FP_Admin_Menu')) {
 
         public static function init()
         {
-            add_action( 'admin_menu', array('FP_Admin_Menu','add_admin_menu') );
+            add_action( 'admin_menu', ['FP_Admin_Menu','add_admin_menu'] );
         }
 
         public static function add_admin_menu() {
@@ -50,13 +50,13 @@ if (!class_exists('FP_Admin_Menu')) {
         /**
          * Display a custom menu page
          */
-        public static function my_custom_menu_page(){
+        public static function my_custom_menu_page() {
             echo "Edit>>>>>>> 1";
         }
 
         public static function submenu_1_page()
         {
-            echo "Edit>>>>>>>";
+            
         }
     }
 
